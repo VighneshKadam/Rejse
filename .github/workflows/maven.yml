@@ -30,7 +30,7 @@ jobs:
       with:
         image: vighneshkadam/rejse-application
         tags: latest
-        registry:docker.io
+        registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secret.DOCKER_USERNAME }}
         password: ${{ secret.DOCKER_PASSWORD }}
