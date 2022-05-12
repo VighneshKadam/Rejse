@@ -34,10 +34,4 @@ public class VideoController {
     public VideoDto editVideoMetadata(@RequestBody VideoDto videoDto) {
         return videoService.editVideo(videoDto);
     }
-	
-	@GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public String checkStatus() {
-        return "Success";
-    }
 }
