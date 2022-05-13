@@ -75,7 +75,7 @@
                 </configuration>
             </plugin>
         </plugins>
-		<finalName>rejse-application</finalName>
+		<finalName>rejse-application-backend</finalName>
     </build>
 
 </project>
