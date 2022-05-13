@@ -57,6 +57,6 @@
                 </executions>
             </plugin>
         </plugins>
-		<finalName>rejse-application-frontend</finalName>
+		<finalName>rejse-application</finalName>
     </build>
 </project>
