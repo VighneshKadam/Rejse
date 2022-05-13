@@ -31,6 +31,16 @@ jobs:
         image: vighneshkadam/rejse-application
         tags: latest
         registry: docker.io
-        dockerfile: Dockerfile
+        dockerfile: backend/Dockerfile
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        
+    - name: Build & push Docker image
+      uses: mr-smithers-excellent/docker-build-push@v5    
+      with:
+        image: vighneshkadam/rejse-application-frontend
+        tags: latest
+        registry: docker.io
+        dockerfile: frontend/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
